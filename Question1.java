@@ -23,7 +23,7 @@
 // Suppose there are n nodes in the list, the time complexity is O(n), 
 // the space complexity is O(n).
 
-public class Solution {
+public class Question1 {
 	public boolean hasCycle(ListNode head) {
 		HashSet<ListNode> set = new HashSet<ListNode>();
 		while (head != null){
@@ -40,10 +40,10 @@ public class Solution {
 // time. The other moves two steps each time. Eventually they will reach the 
 // same node. This could be demonstrated by going through several examples. 
 // If there is indeed a cycle, the fast pointer will always be one loop 
-// faster than the slow pointer. So the time complexity is O(n), the space 
-// complexity is O(1).
+// faster than the slow pointer when they reach the same node. So the time 
+// complexity is O(n), the space complexity is O(1).
 
-public class Solution {
+public class Question1 {
     public boolean hasCycle(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;
