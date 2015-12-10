@@ -5,8 +5,11 @@
 // Follow up:
 // Can you solve it without using extra space?
 
-// A straight forward solution would be iterating the list and using a HashSet to store unique nodes. When we encounter a node which is already in the set, it means this list has a cycle. 
-// Suppose there are n nodes in the list, the time complexity is O(n), the space complexity is O(n).
+// A straight forward solution would be iterating the list and using a HashSet
+// to store unique nodes. When we encounter a node which is already in the set,
+// it means this list has a cycle. 
+// Suppose there are n nodes in the list, the time complexity is O(n), 
+// the space complexity is O(n).
 
 public class Solution {
 	public boolean hasCycle(ListNode head) {
@@ -21,7 +24,12 @@ public class Solution {
 	}
 }
 
-// Another solution is to use two pointers. One of them moves one step each time. The other moves two steps each time. Eventually they will reach the same node. This could be demonstrated by going through several examples. If there is indeed a cycle, the fast pointer will always be one loop faster than the slow pointer. So the time complexity is O(n), the space complexity is O(1).
+// Another solution is to use two pointers. One of them moves one step each 
+// time. The other moves two steps each time. Eventually they will reach the 
+// same node. This could be demonstrated by going through several examples. 
+// If there is indeed a cycle, the fast pointer will always be one loop 
+// faster than the slow pointer. So the time complexity is O(n), the space 
+// complexity is O(1).
 
 public class Solution {
     public boolean hasCycle(ListNode head) {
