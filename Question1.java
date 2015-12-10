@@ -5,6 +5,18 @@
 // Follow up:
 // Can you solve it without using extra space?
 
+
+// Definition for singly-linked list.
+// class ListNode {
+//     int val;
+//     ListNode next;
+//     ListNode(int x) {
+//         val = x;
+//         next = null;
+//     }
+// }
+
+
 // A straight forward solution would be iterating the list and using a HashSet
 // to store unique nodes. When we encounter a node which is already in the set,
 // it means this list has a cycle. 
